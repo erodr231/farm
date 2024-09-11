@@ -86,7 +86,16 @@ table {
     --white: #ffffff; 
 }
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
-
+.top{
+    text-decoration: none;
+    position: fixed;
+    background: var(--orange);
+    border: 3px var(--white) solid;
+    padding: 2rem;
+    margin-left: 92%;
+    margin-top: 41%;
+    z-index: 1;
+}
 body{
    font-family: 'Habibi'; 
    text-decoration: none;
@@ -123,7 +132,6 @@ nav li{
 }
 nav a {
     text-decoration: none;
-    
 }
 
 h1, h2, h3{
@@ -217,15 +225,19 @@ footer{
     margin: 0 auto;
     padding: 50px;
 }
+
+footer p{
+    line-height: 2rem;
+}
 #copyright {
     color: var(--green);
     text-align: center;
-    padding-top: 5px;
+    margin: 1rem;
+    padding: 5px;
+
 }
 
-.top{
-    position: sticky;
-}
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
+
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
