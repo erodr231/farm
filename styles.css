@@ -278,9 +278,9 @@ footer p{
    }
 
    footer{
-    display: inline-block;
+    display: grid;
     text-align: center;
-    padding-right: 69px;
+    gap: 1rem;
    }
 
    footer h2{
