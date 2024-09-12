@@ -284,13 +284,13 @@ footer p{
     padding-right: 69px;
    }
 
-   #hours{
-    padding-top: 2rem;
+   footer h2{
+    margin-top: 0;
    }
-
-   #hours p{
-    size: 75%;
-   }
+   
+   footer p{
+    margin-bottom: 15px;
+}
 }
 
 
@@ -352,9 +352,7 @@ footer p{
         padding: 0 0 1rem 0;
     }
 
-    #hours{
-        padding-top: 0;
-       }
+
 }
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 @media screen and (min-width:1280px) {
@@ -372,15 +370,20 @@ footer p{
         display: inline-block;
         background-color: var(--green);
         text-align: left;
+        width: 50%;
     }
 
     nav{
         width: 50%;
+        padding-bottom: 1rem;
     }
 
     nav ul{
         display: flex;
+        gap: 1rem;
     }
+
+
 
     #fruits h3{
         margin-top: 1rem;
@@ -401,8 +404,15 @@ footer p{
 
     footer{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4,1fr);
+        padding: 1rem;
     }
+
+    footer h2{
+        margin-top: 40px;
+    }
+
+  
 }
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
 @media screen and (min-width:1440px) {
