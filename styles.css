@@ -247,29 +247,54 @@ footer p{
     display: inline-block;
     background-color: transparent;
     padding: 0;
+    margin: 0 auto;
    }
 
+   nav{
+    padding: 2rem 5rem;
+}
+
+    nav ul{
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    nav li{
+        margin-bottom: 1rem;
+    }
    #farm-header{
     width: 100%;
     display: inline-block;
     background-color: var(--green);
     text-align: center;
-    padding: .5rem;
     line-height: 3rem;
-}
-
-nav{
-    width: 100%;
+   }
     
-}
-
-nav ul{
+   .grid-container{
     display: inline-block;
-    flex-direction: row;
-    width: 100%;
-    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+   }
+
+   footer{
+    display: inline-block;
+    text-align: center;
+    padding-right: 69px;
+   }
+
+   #hours{
+    padding-top: 2rem;
+   }
+
+   #hours p{
+    size: 75%;
+   }
 }
-}
+
+
+
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 @media screen and (min-width:834px) {
     header{
@@ -281,14 +306,15 @@ nav ul{
     }
     
     nav{
+        display: inline-block;
         width: 100%;
-        display: flex;
         justify-content: center;
-        padding-top: 3rem;
+        padding: 2rem 0;
     }
 
     nav ul{
-        width: 75%;
+        display: flex;
+        padding: 0px 1rem;
     }
     
     #farm-header{
@@ -322,6 +348,14 @@ nav ul{
         text-align: center;
     }
 
+    footer h2{
+        padding: 0 0 1rem 0;
+    }
+
+    #hours{
+        padding-top: 0;
+       }
+}
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 @media screen and (min-width:1280px) {
     main{
@@ -331,12 +365,17 @@ nav ul{
     header{
         display: flex;
         background-color: var(--green);
+
     }
 
     #farm-header{
+        display: inline-block;
         background-color: var(--green);
-        padding: 1rem;
         text-align: left;
+    }
+
+    nav{
+        width: 50%;
     }
 
     nav ul{
@@ -358,6 +397,11 @@ nav ul{
         grid-template-rows: repeat(4, 1fr);
         gap: 100px;
         padding: 2.5rem;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
